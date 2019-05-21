@@ -181,7 +181,7 @@ function moveTop() {
 }
 
 // for users command
-function makeStep(type) localStorage{
+function makeStep(type){
 
     switch (type) {
         case 'left':
@@ -197,5 +197,4 @@ function makeStep(type) localStorage{
             moveDown();
             break;
     }
-
 }
