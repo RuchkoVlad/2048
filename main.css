@@ -1,0 +1,156 @@
+body    {
+    margin: 0;
+    padding: 0;
+    background: #faf8ef;
+    color: #776e65;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    margin-top: 50px;
+    width: 500px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name   {
+    font-family: "Clear Sans", sans-serif;
+    font-size: 74px;
+    font-weight: 900;
+}
+
+.score  {
+    font-family: "Clear Sans", sans-serif;
+    background: #bbada0;
+    padding: 15px 25px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new_game   {
+    background: #8f7a66;
+    font-family: "Clear Sans", sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 3px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #f9f6f2;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.field  {
+    margin-top: 35px;
+    padding-left: 10px;
+    position: relative;
+    background: #bbada0;
+    border-radius: 6px;
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cell   {
+    width: 107px;
+    height: 107px;
+    margin-right: 15px;
+    border-radius: 3px;
+    background: rgba(238, 228, 218, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.cell_2{
+    background: var(--background_2);
+}
+
+.cell_4 {
+    background: var(--background_4);
+}
+
+.cell_8 {
+    background: var(--background_8);
+    color: var(--white_color);
+}
+
+.cell_16 {
+    background: var(--background_16);
+    color: var(--white_color);
+}
+
+.cell_32 {
+    background: var(--background_32);
+    color: var(--white_color);
+}
+
+.cell_64 {
+    background: var(--background_64);
+    color: var(--white_color);
+}
+
+.cell_128 {
+    background: var(--background_128);
+    color: var(--white_color);
+}
+
+.cell_256 {
+    background: var(--background_256);
+    color: var(--white_color);
+}
+
+.cell_512 {
+    background: var(--background_512);
+    color: var(--white_color);
+}
+
+.cell_1024 {
+    background: var(--background_1024);
+    color: var(--white_color);
+}
+
+.cell_2048 {
+    background: var(--background_2048);
+    color: var(--white_color);
+}
+
+:root {
+    --new-game__background: #8f7a66;
+    --body__background: #faf8ef;
+    --game__field: #bbada0;
+    --background_empty: rgba(238, 228, 218, 0.35);
+    --black__font: #776e65;
+    --background_2: #eee4da;
+    --background_4: #ede0c8;
+    --background_8: #f2b179;
+    --background_16: #f59563;
+    --background_32: #f67c5f;
+    --background_64: #f65e3b;
+    --background_128: #edcf72;
+    --background_256: #edcc61;
+    --background_512: #edc850;
+    --background_1024: #edc53f;
+    --background_2048: #edc22e;
+    --white_color: #f9f6f2;
+    --main_font: "Clear Sans", sans-serif;
+}

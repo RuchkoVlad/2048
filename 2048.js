@@ -7,9 +7,8 @@ let fields = [
     [0, 0, 0, 0]
 ];
 
-function render() {
-    console.log(fields);
-}
+let score = 0;
+
 
 //looking for free cells and count
 function getAmountFreeCells() {
@@ -22,7 +21,7 @@ function getAmountFreeCells() {
             }
         }
     }
-    return count;
+        return count;
 }
 
 // put new random number into free cells
@@ -42,7 +41,6 @@ function addNewNumberForFreePlace() {
             }
         }
     }
-    render();
 }
 
 //just random
@@ -65,6 +63,7 @@ function moveLeft() {
                 fields[i][numberPosition] = 0;
                 flagMerge = true;
                 flagStep = true;
+                score += fields[i][numberPosition - 1];
                 numberPosition++;
             } else if (numberPosition > 0 && fields[i][numberPosition - 1] === 0) {
                 fields[i][numberPosition - 1] = fields[i][numberPosition];
@@ -81,6 +80,7 @@ function moveLeft() {
     }
     if (flagStep) {
         addNewNumberForFreePlace();
+        rander();
     }
 }
 
@@ -97,6 +97,7 @@ function moveRight() {
                 fields[i][numberPosition] = 0;
                 flagMerge = true;
                 flagStep = true;
+                score += fields[i][numberPosition + 1];
                 numberPosition--;
             } else if (numberPosition < 3 && fields[i][numberPosition + 1] === 0) {
                 fields[i][numberPosition + 1] = fields[i][numberPosition];
@@ -113,6 +114,7 @@ function moveRight() {
     }
     if (flagStep) {
         addNewNumberForFreePlace();
+        rander();
     }
 }
 
@@ -129,6 +131,7 @@ function moveDown() {
                 fields[numberPosition][i] = 0;
                 flagMerge = true;
                 flagStep = true;
+                score += fields[numberPosition + 1][i];
                 numberPosition--;
             } else if (numberPosition < 3 && fields[numberPosition + 1][i] === 0) {
                 fields[numberPosition + 1][i] = fields[numberPosition][i];
@@ -145,6 +148,7 @@ function moveDown() {
     }
     if (flagStep) {
         addNewNumberForFreePlace();
+        rander();
     }
 }
 
@@ -161,6 +165,7 @@ function moveTop() {
                 fields[numberPosition][i] = 0;
                 flagMerge = true;
                 flagStep = true;
+                score += fields[numberPosition - 1][i];
                 numberPosition++;
             } else if (numberPosition > 0 && fields[numberPosition - 1][i] === 0) {
                 fields[numberPosition - 1][i] = fields[numberPosition][i];
@@ -177,11 +182,12 @@ function moveTop() {
     }
     if (flagStep) {
         addNewNumberForFreePlace();
+        rander();
     }
 }
 
 // for users command
-function makeStep(type){
+function makeStep(type) {
 
     switch (type) {
         case 'left':
@@ -198,3 +204,28 @@ function makeStep(type){
             break;
     }
 }
+
+//restart
+function restartingGame() {
+    fields = [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0]
+    ];
+    addNewNumberForFreePlace();
+    addNewNumberForFreePlace();
+}
+
+function winRendering() {
+    console.log('You WIN!');
+}
+
+function loseRendering() {
+    console.log('Sorry, You lose!');
+}
+
+addNewNumberForFreePlace();
+addNewNumberForFreePlace();
+rander();
+
