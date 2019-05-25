@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>2048</title>
-
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
-<div class="header">
-    <span class="name">2048</span>
-    <div class="score_wrapper">
-        <div class="score"></div>
-        <button class="new_game"  type="button">Новая игра</button>
+    <div class="header">
+        <span class="name">2048</span>
+        <div class="score_wrapper">
+            <div class="score"></div>
+            <button class="new_game"  type="button">Новая игра</button>
+        </div>
     </div>
-</div>
+    <div class="field"></div>
 
-
-
-<div class="field"></div>
-<script src="dom.js"></script>
-<script src="2048.js"></script>
-<script src="keys.js"></script>
+    <script src="random_add.js"></script>
+    <script src="game_stages.js"></script>
+    <script src="add_dom_elements.js"></script>
+    <script src="movements.js"></script>
+    <script src="control_keys.js"></script>
 
 </body>
 </html>

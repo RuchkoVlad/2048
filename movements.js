@@ -9,55 +9,8 @@ let fields = [
 
 let score = 0;
 
-// looking for free cells and count
-function getAmountFreeCells() {
-    let freeCellsArray = [];
-
-    for (let i = 0; i < fields.length; i++) {
-        for (let j = 0; j < fields[i].length; j++) {
-            if (fields[i][j] === 0) {
-                freeCellsArray.push([i, j]);
-            }
-        }
-    }
-    return freeCellsArray;
-}
-
-// put new random number into free cells
-function addNewNumberForFreePlace() {
-    // debugger;
-    let freeCells = getAmountFreeCells();
-    const count = freeCells.length;
-    const randomPosition = randomNumberPlace(0, count-1);
-
-    fields[freeCells[randomPosition][0]][freeCells[randomPosition][1]] = 2;
-}
-
-//just random
-function randomNumberPlace(min, max) {
-    const rand = min + Math.random() * (max - min);
-    return Math.round(rand);
-}
-
 start();
 
-function start() {
-    fields = [
-        [0, 0, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0]
-    ];
-
-    score = 0;
-    addNewNumberForFreePlace();
-    addNewNumberForFreePlace();
-    render();
-}
-
-
-
-//block for move
 function moveLeft() {
     let flagStep = false;
     for (let i = 0; i < fields.length; i++) {
@@ -193,34 +146,5 @@ function moveTop() {
         render();
     }
 }
-
-// for users command
-function makeStep(type) {
-
-    switch (type) {
-        case 'left':
-            moveLeft();
-            break;
-        case 'right':
-            moveRight();
-            break;
-        case 'top':
-            moveTop();
-            break;
-        case 'down':
-            moveDown();
-            break;
-    }
-}
-
-
-function winRendering() {
-    console.log('You WIN!');
-}
-
-function loseRendering() {
-    console.log('Sorry, You lose!');
-}
-
 
 

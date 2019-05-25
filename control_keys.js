@@ -1,32 +1,30 @@
 'use strict';
 
-
 document.addEventListener("keyup", function (event) {
     if (event.keyCode === 39) {
-        makeStep('right');
+        moveRight();
     }
 });
 
 document.addEventListener("keyup", function (event) {
     if (event.keyCode === 37) {
-        makeStep('left');
+        moveLeft();
     }
 });
 
 document.addEventListener("keyup", function (event) {
     if (event.keyCode === 38) {
-        makeStep('top');
+        moveTop();
     }
 });
 
 document.addEventListener("keyup", function (event) {
     if (event.keyCode === 40) {
-        makeStep('down');
+        moveDown();
     }
-
-    document.addEventListener('click', function () {
-        if (document.querySelector('.new_game'))    {
-            start();
-        }
-    })
+});
+document.addEventListener('click', function () {
+    if (document.querySelector('.new_game')) {
+        start();
+    }
 });

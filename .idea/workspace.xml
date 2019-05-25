@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="076298c1-42b5-4f92-b1dc-579e0826b238" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/game_stages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random_add.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2048.js" beforeDir="false" afterPath="$PROJECT_DIR$/2048.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/dom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keys.js" beforeDir="false" afterPath="$PROJECT_DIR$/keys.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2048.js" beforeDir="false" afterPath="$PROJECT_DIR$/movements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/add_dom_elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keys.js" beforeDir="false" afterPath="$PROJECT_DIR$/control_keys.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,90 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dom.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/keys.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" selection-start-line="33" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2048.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
-              <folding>
-                <element signature="n#!!block;n#getAmountFreeCells#0" />
-                <element signature="n#!!block;n#addNewNumberForFreePlace#0" />
-                <element signature="n#!!block;n#randomNumberPlace#0" />
-                <element signature="n#!!block;n#moveLeft#0" />
-                <element signature="e#2032#2236#0" />
-                <element signature="e#2318#2402#0" />
-                <element signature="e#2408#2457#0" />
-                <element signature="n#!!block;n#moveRight#0" />
-                <element signature="e#2650#3739#0" />
-                <element signature="e#2751#3733#0" />
-                <element signature="e#2802#2851#0" />
-                <element signature="e#2958#3229#0" />
-                <element signature="e#3298#3502#0" />
-                <element signature="e#3584#3668#0" />
-                <element signature="e#3674#3723#0" />
-                <element signature="e#3758#3819#0" />
-                <element signature="n#!!block;n#moveDown#0" />
-                <element signature="e#3915#5004#0" />
-                <element signature="e#4016#4998#0" />
-                <element signature="e#4067#4116#0" />
-                <element signature="e#4223#4494#0" />
-                <element signature="e#4563#4767#0" />
-                <element signature="e#4849#4933#0" />
-                <element signature="e#4939#4988#0" />
-                <element signature="e#5023#5084#0" />
-                <element signature="n#!!block;n#moveTop#0" />
-                <element signature="e#5179#6268#0" />
-                <element signature="e#5280#6262#0" />
-                <element signature="e#5331#5380#0" />
-                <element signature="e#5487#5758#0" />
-                <element signature="e#5827#6031#0" />
-                <element signature="e#6113#6197#0" />
-                <element signature="e#6203#6252#0" />
-                <element signature="n#!!block;n#makeStep#0" />
-                <element signature="e#6404#6681#0" />
-                <element signature="e#6428#6483#0" />
-                <element signature="e#6492#6549#0" />
-                <element signature="e#6558#6611#0" />
-                <element signature="e#6620#6675#0" />
-                <element signature="n#!!block;n#winRendering#0" />
-                <element signature="n#!!block;n#loseRendering#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2325">
-              <caret line="155" column="1" lean-forward="true" selection-start-line="155" selection-start-column="1" selection-end-line="155" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -130,10 +54,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/dom.js" />
-        <option value="$PROJECT_DIR$/2048.js" />
         <option value="$PROJECT_DIR$/keys.js" />
+        <option value="$PROJECT_DIR$/random_add.js" />
+        <option value="$PROJECT_DIR$/control_keys.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/2048.js" />
+        <option value="$PROJECT_DIR$/game_stages.js" />
       </list>
     </option>
   </component>
@@ -186,12 +113,12 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="2048.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="2048.js" working-dir="$PROJECT_DIR$">
+    <configuration name="movements.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/movements.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.2048.js" />
+        <item itemvalue="Node.js.movements.js" />
       </list>
     </recent_temporary>
   </component>
@@ -215,12 +142,12 @@
       <workItem from="1558653656906" duration="6737000" />
       <workItem from="1558736025882" duration="1500000" />
       <workItem from="1558781910820" duration="57000" />
-      <workItem from="1558782128099" duration="6936000" />
+      <workItem from="1558782128099" duration="7692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28679000" />
+    <option name="totallyTimeSpent" value="29435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -249,13 +176,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2325">
@@ -263,14 +183,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2048.js">
+    <entry file="file://$PROJECT_DIR$/add_dom_elements.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control_keys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_stages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="n#!!block;n#start#0" />
+            <element signature="n#!!block;n#winRendering#0" />
+            <element signature="n#!!block;n#loseRendering#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/random_add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
           <folding>
             <element signature="n#!!block;n#getAmountFreeCells#0" />
             <element signature="n#!!block;n#addNewNumberForFreePlace#0" />
             <element signature="n#!!block;n#randomNumberPlace#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movements.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+          <folding>
             <element signature="n#!!block;n#moveLeft#0" />
             <element signature="e#2032#2236#0" />
             <element signature="e#2318#2402#0" />
@@ -301,29 +256,14 @@
             <element signature="e#5827#6031#0" />
             <element signature="e#6113#6197#0" />
             <element signature="e#6203#6252#0" />
-            <element signature="n#!!block;n#makeStep#0" />
-            <element signature="e#6404#6681#0" />
-            <element signature="e#6428#6483#0" />
-            <element signature="e#6492#6549#0" />
-            <element signature="e#6558#6611#0" />
-            <element signature="e#6620#6675#0" />
-            <element signature="n#!!block;n#winRendering#0" />
-            <element signature="n#!!block;n#loseRendering#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="36" />
+        <state relative-caret-position="120">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
