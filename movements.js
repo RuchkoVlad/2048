@@ -43,6 +43,7 @@ function moveLeft() {
         addNewNumberForFreePlace();
         render();
     }
+    winRendering();
 }
 
 function moveRight() {
@@ -77,6 +78,7 @@ function moveRight() {
         addNewNumberForFreePlace();
         render();
     }
+    winRendering();
 }
 
 function moveDown() {
@@ -111,6 +113,7 @@ function moveDown() {
         addNewNumberForFreePlace();
         render();
     }
+    winRendering();
 }
 
 function moveTop() {
@@ -145,6 +148,7 @@ function moveTop() {
         addNewNumberForFreePlace();
         render();
     }
+    winRendering();
 }
 
 

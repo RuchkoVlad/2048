@@ -69,17 +69,36 @@ body {
     padding: 5px;
 }
 
-.title_wrapper  {
+.title_wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 350px;
 }
 
-.rules  {
+.rules {
     font-size: 16px;
     margin-top: 29px;
     width: 330px;
     font-family: var(--main_font);
+}
+
+.win_wrapper {
+    background: var(--game__field);
+    border-radius: 6px;
+    width: 500px;
+    height: 500px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.win {
+    font-family: var(--main_font);
+    font-size: 65px;
+    font-weight: bold;
+    color: var(--white_color);
+    text-align: center;
 }
 
 .cell {

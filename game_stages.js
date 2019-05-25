@@ -18,10 +18,25 @@ function start() {
 }
 
 function winRendering() {
-    console.log('You WIN!');
+    for (let i = 0; i < fields.length; i++) {
+        for (let j = 0; j < fields.length; j++) {
+            if (fields[i][j] >= 2048) {
+                win();
+            }
+        }
+    }
 }
 
-function loseRendering() {
-    console.log('Sorry, You lose!');
-}
+// function loseRendering() {
+//
+//     for (let i = 0; i < fields.length ; i++) {
+//         for (let j = 0; j < fields.length; j++) {
+//             if(fields[i][j] !== fields[i][j + 1] && fields[i][j] !== fields[i][j - 1]
+//                 && fields[i][j] !== fields[i + 1][j] && fields[i][j] !== fields[i - 1][j] && fields[i][j] !== 0){
+//                 alert('Sorry, You lose!');
+//             }
+//         }
+//     }
+//
+// }
 
