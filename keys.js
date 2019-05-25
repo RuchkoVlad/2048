@@ -3,7 +3,7 @@
 
 document.addEventListener("keyup", function (event) {
     if (event.keyCode === 39) {
-        moveRight();
+        makeStep('right');
     }
 });
 
@@ -15,12 +15,18 @@ document.addEventListener("keyup", function (event) {
 
 document.addEventListener("keyup", function (event) {
     if (event.keyCode === 38) {
-        moveTop();
+        makeStep('top');
     }
 });
 
 document.addEventListener("keyup", function (event) {
     if (event.keyCode === 40) {
-        moveDown();
+        makeStep('down');
     }
+
+    document.addEventListener('click', function () {
+        if (document.querySelector('.new_game'))    {
+            start();
+        }
+    })
 });

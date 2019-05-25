@@ -9,38 +9,28 @@ let fields = [
 
 let score = 0;
 
-
-//looking for free cells and count
+// looking for free cells and count
 function getAmountFreeCells() {
-    let count = 0;
+    let freeCellsArray = [];
 
     for (let i = 0; i < fields.length; i++) {
         for (let j = 0; j < fields[i].length; j++) {
             if (fields[i][j] === 0) {
-                count++;
+                freeCellsArray.push([i, j]);
             }
         }
     }
-        return count;
+    return freeCellsArray;
 }
 
 // put new random number into free cells
 function addNewNumberForFreePlace() {
-    const count = getAmountFreeCells();
-    const randomPosition = randomNumberPlace(1, count);
-    let currentFreeCellAmount = 0;
+    // debugger;
+    let freeCells = getAmountFreeCells();
+    const count = freeCells.length;
+    const randomPosition = randomNumberPlace(0, count-1);
 
-    for (let i = 0; i < fields.length; i++) {
-        for (let j = 0; j < fields[i].length; j++) {
-            if (fields[i][j] === 0) {
-                currentFreeCellAmount++;
-            }
-            if (currentFreeCellAmount === randomPosition) {
-                fields[i][j] = 2;
-                break;
-            }
-        }
-    }
+    fields[freeCells[randomPosition][0]][freeCells[randomPosition][1]] = 2;
 }
 
 //just random
@@ -48,6 +38,24 @@ function randomNumberPlace(min, max) {
     const rand = min + Math.random() * (max - min);
     return Math.round(rand);
 }
+
+start();
+
+function start() {
+    fields = [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0]
+    ];
+
+    score = 0;
+    addNewNumberForFreePlace();
+    addNewNumberForFreePlace();
+    render();
+}
+
+
 
 //block for move
 function moveLeft() {
@@ -80,7 +88,7 @@ function moveLeft() {
     }
     if (flagStep) {
         addNewNumberForFreePlace();
-        rander();
+        render();
     }
 }
 
@@ -114,7 +122,7 @@ function moveRight() {
     }
     if (flagStep) {
         addNewNumberForFreePlace();
-        rander();
+        render();
     }
 }
 
@@ -148,7 +156,7 @@ function moveDown() {
     }
     if (flagStep) {
         addNewNumberForFreePlace();
-        rander();
+        render();
     }
 }
 
@@ -182,7 +190,7 @@ function moveTop() {
     }
     if (flagStep) {
         addNewNumberForFreePlace();
-        rander();
+        render();
     }
 }
 
@@ -205,17 +213,6 @@ function makeStep(type) {
     }
 }
 
-//restart
-function restartingGame() {
-    fields = [
-        [0, 0, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0]
-    ];
-    addNewNumberForFreePlace();
-    addNewNumberForFreePlace();
-}
 
 function winRendering() {
     console.log('You WIN!');
@@ -225,7 +222,5 @@ function loseRendering() {
     console.log('Sorry, You lose!');
 }
 
-addNewNumberForFreePlace();
-addNewNumberForFreePlace();
-rander();
+
 

@@ -1,9 +1,8 @@
 'use strict';
 
-function rander() {
+function render() {
 
     let html = ``;
-
 
     for (let i = 0; i < fields.length; i++) {
         for (let k = 0; k < fields.length; k++) {
