@@ -23,8 +23,3 @@ document.addEventListener('keyup', function (event) {
         moveDown();
     }
 });
-document.addEventListener('click', function () {
-    if (document.querySelector('.new_game')) {
-        start();
-    }
-});
