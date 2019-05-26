@@ -100,6 +100,21 @@ body {
     text-align: center;
 }
 
+
+@keyframes fade-in {
+    0% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cell_2, .cell_4, .cell_8, .cell_16 {
+    animation: fade-in 0.2s linear;
+}
+
 .cell {
     width: 107px;
     height: 107px;

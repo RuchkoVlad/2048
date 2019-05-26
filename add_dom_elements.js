@@ -9,7 +9,8 @@ function render() {
 
             if (fields[i][k] === 0) {
                 html += `<div class="cell"></div>`;
-            } else {
+            }
+            else {
                 html += `<div class="cell cell_${fields[i][k]}">${fields[i][k]}</div>`;
             }
         }
@@ -20,8 +21,12 @@ function render() {
 
 let win = () => {
     document.querySelector('.field').innerHTML = `<div class="win_wrapper">  
-                                                                            <span class="win">ПОБЕДА!<br>
-                                                                                <img src="https://img.icons8.com/dusk/64/000000/trophy.png" alt="prize">
-                                                                            </span>
-                                                                       </div>`;
+                                                              <span class="win">ПОБЕДА!<br>
+                                                              <img src="https://img.icons8.com/dusk/64/000000/trophy.png" alt="prize">
+                                                              </span>
+                                                           </div>`;
+};
+
+let losing = () => {
+    alert('sdf');
 };

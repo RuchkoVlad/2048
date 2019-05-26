@@ -16,7 +16,7 @@ function getAmountFreeCells() {
 
 // put new random number into free cells
 function addNewNumberForFreePlace() {
-    // debugger;
+
     let freeCells = getAmountFreeCells();
     const count = freeCells.length;
     const randomPosition = randomNumberPlace(0, count - 1);
@@ -29,3 +29,4 @@ function randomNumberPlace(min, max) {
     const rand = min + Math.random() * (max - min);
     return Math.round(rand);
 }
+

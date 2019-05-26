@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="076298c1-42b5-4f92-b1dc-579e0826b238" name="Default Changelist" comment="" />
+    <list default="true" id="076298c1-42b5-4f92-b1dc-579e0826b238" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_dom_elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/add_dom_elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game_stages.js" beforeDir="false" afterPath="$PROJECT_DIR$/game_stages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movements.js" beforeDir="false" afterPath="$PROJECT_DIR$/movements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_add.js" beforeDir="false" afterPath="$PROJECT_DIR$/random_add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variables_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/variables_css.css" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,24 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game_stages.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-              <folding>
-                <element signature="n#!!block;n#start#0" />
-                <element signature="n#!!block;n#winRendering#0" />
-              </folding>
+              <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -38,47 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="154" selection-start-line="154" selection-end-line="154" />
-              <folding>
-                <element signature="e#96#303#0" />
-                <element signature="e#313#439#0" />
-                <element signature="e#447#551#0" />
-                <element signature="e#560#873#0" />
-                <element signature="e#885#1152#0" />
-                <element signature="e#1161#1410#0" />
-                <element signature="e#1428#1489#0" />
-                <element signature="e#1499#1598#0" />
-                <element signature="e#1612#1620#0" />
-                <element signature="e#1608#1616#0" />
-                <element signature="e#1606#1862#0" />
-                <element signature="e#1872#1912#0" />
-                <element signature="e#1922#1962#0" />
-                <element signature="e#1972#2043#0" />
-                <element signature="e#2054#2126#0" />
-                <element signature="e#2137#2209#0" />
-                <element signature="e#2220#2292#0" />
-                <element signature="e#2304#2377#0" />
-                <element signature="e#2389#2462#0" />
-                <element signature="e#2474#2547#0" />
-                <element signature="e#2560#2634#0" />
-                <element signature="e#2647#2721#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/movements.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-              <folding>
-                <element signature="n#!!block;n#moveLeft#0" />
-                <element signature="n#!!block;n#moveRight#0" />
-                <element signature="n#!!block;n#moveDown#0" />
-                <element signature="n#!!block;n#moveTop#0" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -108,15 +64,15 @@
       <list>
         <option value="$PROJECT_DIR$/dom.js" />
         <option value="$PROJECT_DIR$/keys.js" />
-        <option value="$PROJECT_DIR$/random_add.js" />
         <option value="$PROJECT_DIR$/2048.js" />
-        <option value="$PROJECT_DIR$/variables_css.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/control_keys.js" />
-        <option value="$PROJECT_DIR$/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/variables_css.css" />
+        <option value="$PROJECT_DIR$/random_add.js" />
+        <option value="$PROJECT_DIR$/game_stages.js" />
         <option value="$PROJECT_DIR$/movements.js" />
         <option value="$PROJECT_DIR$/add_dom_elements.js" />
-        <option value="$PROJECT_DIR$/game_stages.js" />
+        <option value="$PROJECT_DIR$/main.css" />
       </list>
     </option>
   </component>
@@ -132,7 +88,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,6 +99,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,30 +154,31 @@
       <workItem from="1558653656906" duration="6737000" />
       <workItem from="1558736025882" duration="1500000" />
       <workItem from="1558781910820" duration="57000" />
-      <workItem from="1558782128099" duration="14530000" />
+      <workItem from="1558782128099" duration="14793000" />
+      <workItem from="1558832793229" duration="9427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36273000" />
+    <option name="totallyTimeSpent" value="45963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15574348" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15574348" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.38795182" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.38795182" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -239,17 +196,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/add_dom_elements.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/variables_css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state>
+          <caret column="60" lean-forward="true" selection-start-column="60" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movements.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="121" column="19" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!block;n#moveLeft#0" />
+            <element signature="n#!!block;n#moveRight#0" />
+            <element signature="n#!!block;n#moveDown#0" />
+            <element signature="n#!!block;n#moveTop#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/random_add.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+        <state relative-caret-position="165">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="n#!!block;n#getAmountFreeCells#0" />
             <element signature="n#!!block;n#addNewNumberForFreePlace#0" />
@@ -258,76 +235,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add_dom_elements.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="n#!!block;n#render#0" />
-            <element signature="e#584#1087#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game_stages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
           <folding>
             <element signature="n#!!block;n#start#0" />
             <element signature="n#!!block;n#winRendering#0" />
+            <element signature="e#485#1293#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="154" selection-start-line="154" selection-end-line="154" />
-          <folding>
-            <element signature="e#96#303#0" />
-            <element signature="e#313#439#0" />
-            <element signature="e#447#551#0" />
-            <element signature="e#560#873#0" />
-            <element signature="e#885#1152#0" />
-            <element signature="e#1161#1410#0" />
-            <element signature="e#1428#1489#0" />
-            <element signature="e#1499#1598#0" />
-            <element signature="e#1612#1620#0" />
-            <element signature="e#1608#1616#0" />
-            <element signature="e#1606#1862#0" />
-            <element signature="e#1872#1912#0" />
-            <element signature="e#1922#1962#0" />
-            <element signature="e#1972#2043#0" />
-            <element signature="e#2054#2126#0" />
-            <element signature="e#2137#2209#0" />
-            <element signature="e#2220#2292#0" />
-            <element signature="e#2304#2377#0" />
-            <element signature="e#2389#2462#0" />
-            <element signature="e#2474#2547#0" />
-            <element signature="e#2560#2634#0" />
-            <element signature="e#2647#2721#0" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movements.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding>
-            <element signature="n#!!block;n#moveLeft#0" />
-            <element signature="n#!!block;n#moveRight#0" />
-            <element signature="n#!!block;n#moveDown#0" />
-            <element signature="n#!!block;n#moveTop#0" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
         </state>
       </provider>
     </entry>

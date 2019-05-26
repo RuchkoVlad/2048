@@ -44,6 +44,7 @@ function moveLeft() {
         render();
     }
     winRendering();
+    loseChecking();
 }
 
 function moveRight() {
@@ -79,6 +80,7 @@ function moveRight() {
         render();
     }
     winRendering();
+    loseChecking();
 }
 
 function moveDown() {
@@ -114,6 +116,7 @@ function moveDown() {
         render();
     }
     winRendering();
+    loseChecking();
 }
 
 function moveTop() {
@@ -149,6 +152,8 @@ function moveTop() {
         render();
     }
     winRendering();
+    loseChecking();
+    document.querySelector('.cell').classList.remove('animation');
 }
 
 
