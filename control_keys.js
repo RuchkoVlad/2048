@@ -27,36 +27,48 @@ document.addEventListener('keyup', function (event) {
 
 // let field = document.querySelector('.field');
 //
-// field.addEventListener('touchstart', touchstart, false);
-// field.addEventListener('touchmove', touchMove, false);
-// field.addEventListener('touchend', touchUp, false);
-//
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
 
-// let initialPoint;
-// let finalPoint;
-// document.addEventListener('touchstart', function(event) {
-//     event.preventDefault();
-//     event.stopPropagation();
-//     initialPoint=event.changedTouches[0];
-// }, false);
-// document.addEventListener('touchend', function(event) {
-//     event.preventDefault();
-//     event.stopPropagation();
-//     finalPoint=event.changedTouches[0];
-//     let xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
-//     let yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
-//     if (xAbs > 20 || yAbs > 20) {
-//         if (xAbs > yAbs) {
-//             if (finalPoint.pageX < initialPoint.pageX){
-//                 moveLeft()
-//             else{
-//                 moveRight()
-//         }
-//         else {
-//             if (finalPoint.pageY < initialPoint.pageY){
-//                 moveTop()
-//             else{
-//                moveDown()
-//         }
-//     }
-// } false);
+let xDown = null;
+let yDown = null;
+
+function getTouches(evt) {
+    return evt.touches ||             // browser API
+        evt.originalEvent.touches; // jQuery
+}
+
+function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];
+    xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
+}
+
+function handleTouchMove(evt) {
+    if ( ! xDown || ! yDown ) {
+        return;
+    }
+
+    let xUp = evt.touches[0].clientX;
+    let yUp = evt.touches[0].clientY;
+
+    let xDiff = xDown - xUp;
+    let yDiff = yDown - yUp;
+
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
+        if ( xDiff > 0 ) {
+            moveLeft();
+        } else {
+            moveRight();
+        }
+    } else {
+        if ( yDiff > 0 ) {
+           moveTop();
+        } else {
+           moveDown()
+        }
+    }
+
+    xDown = null;
+    yDown = null;
+}
