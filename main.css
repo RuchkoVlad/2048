@@ -100,7 +100,6 @@ body {
     text-align: center;
 }
 
-
 @keyframes fade-in {
     0% {
         transform: scale(0.95);

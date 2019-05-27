@@ -43,8 +43,11 @@ function moveLeft() {
         addNewNumberForFreePlace();
         render();
     }
-    winRendering();
-    loseChecking();
+    if (loseChecking()) {
+        loseRendering();
+    } else {
+        winRendering();
+    }
 }
 
 function moveRight() {
@@ -79,8 +82,11 @@ function moveRight() {
         addNewNumberForFreePlace();
         render();
     }
-    winRendering();
-    loseChecking();
+    if (loseChecking()) {
+        loseRendering();
+    } else {
+        winRendering();
+    }
 }
 
 function moveDown() {
@@ -115,8 +121,11 @@ function moveDown() {
         addNewNumberForFreePlace();
         render();
     }
-    winRendering();
-    loseChecking();
+    if (loseChecking()) {
+        loseRendering();
+    } else {
+        winRendering();
+    }
 }
 
 function moveTop() {
@@ -151,9 +160,11 @@ function moveTop() {
         addNewNumberForFreePlace();
         render();
     }
-    winRendering();
-    loseChecking();
-    document.querySelector('.cell').classList.remove('animation');
+    if (loseChecking()) {
+        loseRendering();
+    } else {
+        winRendering();
+    }
 }
 
 

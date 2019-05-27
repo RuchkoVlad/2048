@@ -9,8 +9,7 @@ function render() {
 
             if (fields[i][k] === 0) {
                 html += `<div class="cell"></div>`;
-            }
-            else {
+            } else {
                 html += `<div class="cell cell_${fields[i][k]}">${fields[i][k]}</div>`;
             }
         }
@@ -27,6 +26,10 @@ let win = () => {
                                                            </div>`;
 };
 
-let losing = () => {
-    alert('sdf');
+let loseRendering = () => {
+    document.querySelector('.field').innerHTML = `<div class="win_wrapper">  
+                                                              <span class="win">ПОРАЖЕНИЕ<br>
+                                                              <img src="https://img.icons8.com/color/96/000000/drama.png">
+                                                              </span>
+                                                           </div>`;
 };
